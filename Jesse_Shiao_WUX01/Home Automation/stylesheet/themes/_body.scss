@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #e6e6e6;
+  &.header-fixed {
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding-top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}

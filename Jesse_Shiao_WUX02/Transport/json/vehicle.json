@@ -1,0 +1,52 @@
+{
+    "vehicles": [
+        {
+            "id": "v1",
+            "title": "2017 Suzuki GSX-R1000",
+            "category": "Motorbike",
+            "image": "images/motorbike.png",
+            "detail": "The King of Sportbikes. All-new from its sticky tires up, the GSX-R1000 exudes MotoGP influence.",
+            "mind": 1,
+            "maxd": 5,
+            "minp": 1,
+            "maxp": 1,
+            "price": 109
+        },
+        {
+            "id": "v2",
+            "title": "2016 Ford B-MAX",
+            "category": "Small Car",
+            "image": "images/small-car.png",
+            "detail": "The Ford B-MAX is a compact MPV with a multitude of technologies, developed especially to make driving easier.",
+            "mind": 1,
+            "maxd": 10,
+            "minp": 1,
+            "maxp": 2,
+            "price": 129
+        },
+        {
+            "id": "v3",
+            "title": "2015 Honda CR-V",
+            "category": "Large Car",
+            "image": "images/large-car.png",
+            "detail": "The 2015 Honda CR-V makes modest improvements to efficiency, safety and tech across the board, but faces very stiff competition from younger challengers.",
+            "mind": 3 ,
+            "maxd": 10,
+            "minp": 1,
+            "maxp": 5,
+            "price": 144
+        },
+        {
+            "id": "v4",
+            "title": "2017 Swift Bessacarr 484",
+            "category": "Motor Home",
+            "image": "images/motorhome.png",
+            "detail": "The 2017 Model Now in Stock Swift Bessacarr 484 Powered by the new Fiat Euro 6 2.3 litre, 130bhp turbo diesel engine, a 6 speed Manual gearbox.",
+            "mind": 2,
+            "maxd": 15,
+            "minp": 2,
+            "maxp": 6,
+            "price": 200
+        }
+    ]
+}

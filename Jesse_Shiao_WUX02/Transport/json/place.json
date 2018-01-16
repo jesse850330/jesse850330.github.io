@@ -1,0 +1,29 @@
+{
+    "places": [
+        {
+            "title": "Pleace Select",
+            "category": "pleace-select"
+        },
+        {
+            "id": "p1",
+            "title": "Auckland",
+            "category": "auckland",
+            "distance1": 643,
+            "distance2": 1218
+        },
+        {
+            "id": "p2",
+            "title": "Wellington",
+            "category": "wellington",
+            "distance1": 643,
+            "distance2": 582
+        },
+        {
+            "id": "p3",
+            "title": "Christchurch",
+            "category": "christchurch",
+            "distance1": 1218,
+            "distance2": 582
+        }
+    ]
+}
