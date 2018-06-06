@@ -964,7 +964,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 16px !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
-  background: #FCEDDA;
+  background: #808080;
   border: 2px solid #FCEDDA;
   color: #fff !important;
   -webkit-border-radius: 30px;
@@ -976,7 +976,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fffdfb;
   border: 2px solid #fffdfb;
   text-decoration: none;
-  color: #fff !important;
+  color: #000 !important;
 }
 #fh5co-offcanvas ul li.cta a:hover:after {
   display: none;
