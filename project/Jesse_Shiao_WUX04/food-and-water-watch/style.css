@@ -1,0 +1,796 @@
+/*
+Theme Name: Food and Water Watch
+Theme URI: http://bulmapress.com/
+Author: Jesse Shaio
+Author URI: http://scops.com
+Description: A modern wordpress starter theme built on top of underscores (by Autommatic) with Bulma.io mobile-first flexbox frontend.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Food and Water Watch
+Tags: one-column, two-columns, three-columns, four-columns, grid-layout, featured-images, accessibility-ready, featured-images, microformats, sticky-post, threaded-comments, translation-ready, blog, news, photography, portfolio
+
+Bulmapress is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Main stylesheet: /frontend/bulmapress/css/bulmapress.css
+
+Bulma Sass: /frontend/bulma/sass/
+Bulmapress Sass: /frontend/bulmapress/sass/
+*/
+
+
+/*** html css ***/
+body {
+    padding-top: 8em;
+    min-width: 800px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    font-size: 1em;
+}
+
+
+/*** font ***/
+p,i,b,u {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h2 {
+    padding-top: 0.5em;
+    font-size: 3em;
+    font-family: "DIN Condensed" , sans-serif;
+    text-align:center;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: "DIN Condensed" , sans-serif;
+    text-align:center;
+    height: 90px;
+}
+
+h4 {
+    padding-top: 3em;
+    padding-bottom: 1em;
+    font-size: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align:center;
+}
+
+h5 {
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align:left;
+}
+
+h6{
+    padding: 1em 5em;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align:center;
+}
+
+
+/*** header ***/
+@media screen and (max-width: 900px) {
+    .e-mail {
+        display: none;
+    }
+    .submit {
+        display: none;
+    }
+
+}
+ul {
+    position:absolute;
+    top: 2.6em;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c6c6c6;
+    height: 5.4em;
+    z-index: 1;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    line-height: 3em;
+    font-family: "DIN Condensed" , sans-serif;
+    font-size: 1.8em;
+    font-stretch: ultra-condensed;
+}
+
+li a:hover {
+    background-color: #9b9b9b;
+}
+
+.logo {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index: 2;
+}
+.logo img {
+    padding: 0.5em;
+    height: 8em;
+}
+
+.register {
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: black;
+    height: 2.6em;
+    line-height: 2.6em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 100%;
+    z-index: 1;
+}
+
+.e-mail {
+    margin-left: 40%;
+}
+
+.submit {
+    margin-left: 0.5em;
+    color: #228b22;
+}
+
+.register a:hover {
+    color: #adff2f;
+}
+
+.donate {
+    position:absolute;
+    top:0px;
+    right:0px;
+    color: #808080;
+    background-color: #ffff00;
+    height: 2.6em;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 1.8em;
+    width: 6em;
+    z-index: 1;
+}
+
+.donate :hover {
+    color: #808080;
+    background-color: #FED401;
+}
+
+
+/*** footer ***/
+@media screen and (max-width: 900px) {
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        width: 400px;
+        margin: auto;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        font-size: 0.6em;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-logo a {
+        color: #808080;
+        outline: none;
+        padding: 0.3em;
+        border: 1px #c6c6c6 solid;
+        border-radius: 4px;
+    }
+
+    .footer-detail {
+        width: 150px;
+    }
+
+    .footer-side {
+        width: 100px;
+    }
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 800px;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 0.6em;
+}
+
+.footer-logo {
+    width: 120px;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+    padding-bottom: 1em;
+}
+
+.footer-logo a {
+    color: #808080;
+    outline: none;
+    padding: 0.3em;
+    border: 1px #c6c6c6 solid;
+    border-radius: 4px;
+}
+
+.footer-detail {
+    width: 400px;
+}
+
+.footer-side {
+    width: 250px;
+}
+
+
+/*** home page ***/
+.home-story {
+    display: block;
+    width: 100%;
+    height: 30em;
+    position:relative;
+    overflow:hidden;
+}
+
+.home-story {
+    display: block;
+    background-image: url(/wordpress/wp-content/themes/food-and-water-watch/image/home.jpg);
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-x: center;
+    height: 30em;
+    z-index: 0;
+}
+
+.home-story div {
+    height: 30em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home-story div:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.home-story div h1 {
+    padding-top: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #ffffff;
+    z-index: 1;
+}
+.home-story div p {
+    margin: 0.3em 10%;
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #ffffff;
+    z-index: 1;
+}
+.home-story div a {
+    margin-left: 10%;
+    padding: 0.5em;
+    width: 5em;
+    height: 3em;
+    font-size: 1.5em;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #adff2f;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.home-story div a:hover {
+    color: #fed401;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.home-flex {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 900px;
+    justify-content:space-around;
+}
+
+.flex-container {
+    padding-right: 12.5px;
+    width: 200px;
+    justify-content: center;
+}
+
+.flex-icon {
+    display: block;
+    height: 280px;
+    padding: 50px 25px 20px;
+    margin: auto;
+}
+
+.flex-icon img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.flex-border {
+    border-right: 2px solid #808080;
+}
+
+.icon-bar {
+    width: 70px;
+    height: 5px;
+    margin: auto;
+    background-color: #adff2f;
+}
+
+.icon-fix {
+    margin-top: 50px;
+}
+
+.home-donate {
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.home-donate a {
+    color: #228b22;
+    background-color: #000000;
+    padding: 0.4em;
+    font-size: 1.5em;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.home-donate a:hover {
+    color: #FED401;
+}
+
+
+/*** campaigns and stories page ***/
+@media screen and (max-width: 900px) {
+    .cs-side {
+        display: none;
+    }
+    .cs-container {
+        padding-left: 1em;
+    }
+}
+
+.cs-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.cs-info {
+    width: 700px;
+}
+
+.cs-info a {
+    font-family: "DIN Condensed" , sans-serif;
+    font-size: 1.8em;
+    color: #4CAF50;
+}
+
+.cs-info a:hover {
+    color: #006400;
+}
+
+.cs-info p {
+    padding-bottom: 1em;
+}
+
+.cs-side {
+    padding-left: 2em;
+    padding-top: 1em;
+    width: 200px;
+    border-left: 1px solid #808080;
+
+}
+
+.cs-side b {
+    font-size: 1em;
+    padding-bottom: 2em;
+}
+
+.cs-side-nav a {
+    display: block;
+    padding: 1em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #ffffff;
+    background-color: #808080;
+}
+
+.cs-side-nav a:hover {
+    background-color: #1e90ff;
+}
+
+.cs-sign-up {
+    display: inline-flex;
+    justify-content: center;
+    width:100%;
+    height: 15em;
+    background-color: #0a0a0a;
+}
+
+.cs-sign-up img {
+    height: 100%;
+    width: auto;
+}
+
+.sign-up-input {
+    height: 100%;
+    width: 800px;
+    text-align: left;
+    background-color: #adff2f;
+}
+
+.sign-up-input p {
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-family: "DIN Condensed" , sans-serif;
+    font-size: 1.8em;
+}
+
+.sign-up-input input {
+    border: none;
+    outline: none;
+    margin-left: 3em;
+    font-size: 1.2em;
+    height: 2.5em;
+}
+
+.sign-up-input a {
+    font-size: 1.2em;
+    padding: 0.65em 2em;
+    color: #adff2f;
+    background-color: #0a0a0a;
+}
+
+.sign-up-input a:hover {
+    background-color: #6a6a6a;
+}
+
+
+/*** about and contact page ***/
+@media screen and (max-width: 900px) {
+    .side-nav {
+        display: none;
+    }
+    .ac-container {
+        padding-left: 1em;
+    }
+}
+
+.ac-container {
+    padding-top: 2em;
+    display: flex;
+    width: 1000px;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.ac-info {
+    width: 700px;
+    padding-left: 3em;
+
+}
+
+.ac-info b {
+    font-family: "DIN Condensed" , sans-serif;
+    font-size: 1.8em;
+}
+
+.ac-info p {
+    padding-bottom: 3em;
+}
+
+.ac-action {
+    width: 800px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.ac-action a {
+    color: #adff2f;
+    background-color: #000000;
+    padding: 0.4em;
+    font-size: 1.5em;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.ac-action a:hover {
+    color: #FED401;
+}
+
+.ac-nav-info a {
+    padding-top: 1em;
+    font-family: "DIN Condensed" , sans-serif;
+    color: #4CAF50;
+    font-size: 1.5em;
+}
+
+.ac-nav-info a:hover {
+    color: #006400;
+    font-size: 1.5em;
+}
+
+.ac-nav-info p {
+    font-size: 1em;
+    padding-bottom: 3em;
+}
+
+.side-nav {
+    padding-top: 1em;
+    width: 200px;
+    border-right: 1px solid #808080;
+}
+
+.side-nav-list a {
+    color: #0a0a0a;
+    padding-left: 1em;
+    font-size: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.side-nav-list a:hover {
+    color: #4CAF50;
+}
+
+.donate-side {
+    padding-top: 5em;
+}
+
+.side-btn {
+    color: #0a0a0a;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.side-btn:hover {
+    color: #4CAF50;
+    padding-left: 0.1em;
+    transition: 0.3s;
+}
+
+.campaigns01 {
+    display: block;
+    width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.campaigns01 iframe  {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 800px;
+    height: 450px;
+}
+
+.campaigns-info {
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 550px;
+}
+
+.campaigns-info-img {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: auto;
+}
+
+.stories01 {
+    display: block;
+    width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+
+/*** News page ***/
+.news-report {
+    margin: auto;
+    text-align: center;
+}
+
+.ac-info ol {
+    display: block;
+    line-height: 2em;
+}
+
+.ac-info ol li {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1em;
+}
+
+.ac-info ol li b {
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1em;
+}
+
+.news-report a {
+    color: #adff2f;
+    background-color: #000000;
+    padding: 0.4em;
+    font-size: 1.5em;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.news-report a:hover {
+    color: #FED401;
+}
+
+
+/*** sign up ***/
+.sign-up-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+    padding-bottom: 2em;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.sign-up-info div {
+    width: 300px;
+}
+
+/*** donate page ***/
+.donate-info {
+    width: 800px;
+    height: 500px;color: #808080;
+    margin: auto;
+}
+
+.donate-info p {
+    font-size: 0.9em;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.donation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    padding-bottom: 2em;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.donation-select {
+    width: 800px;
+    padding-bottom: 1em;
+}
+
+.donation-info {
+    width: 380px;
+}
+
+.donation-payment {
+    width: 380px;
+}
+
+.donation-payment i {
+    font-size: 0.5em;
+}
+
+.donate-btn {
+    background-color: #4CAF50;
+    border: none;
+    outline:none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.donate-btn:hover {
+    background-color: #6a6a6a;
+}
+
+.donate-btn:focus-within {
+    background-color: #000000;
+}
+
+.donate-btn input {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.donation-detail {
+    height: 2em;
+    width: 350px;
+    outline: none;
+    border: 1px #c6c6c6 solid;
+    border-radius: 4px;
+}
+
+.detail-card {
+    width: 250px;
+}
+
+.detail-month {
+    width: 60px;
+}
+
+.detail-year {
+    width: 60px;
+}
+
+.detail-cvv {
+    width: 40px;
+}
+
+.donation-checkbox {
+    width: 20px;
+}
+
+.donation-read {
+    width: 780px;
+    text-align: left;
+}
+
+.submit-but {
+    margin: auto;
+    padding-top: 2em;
+}
+
+.submit-but a {
+    color: #ffffff;
+    background-color: #4CAF50;
+    padding: 0.5em;
+    font-size: 1.5em;
+    border-radius: 4px;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.submit-but a:hover {
+    background-color: #000000;
+}

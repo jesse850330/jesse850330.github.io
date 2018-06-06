@@ -1,0 +1,227 @@
+body {
+    top: 0;
+    left: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #000;
+}
+
+/* phone */
+
+#phone {
+    position: absolute;
+    width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.phone-img {
+    width: auto;
+    height: 40em;
+    min-height: 500px;
+}
+
+/* input reset */
+
+#pac-input {
+    position: absolute;
+    top: 9.1em;
+    left: 14.9em;
+    margin-top: 2.5em;
+    margin-left: 0.5em; 
+    width: 16.8em;
+    text-overflow: ellipsis;
+    text-align: center;
+    display: block;
+}
+
+#origin-input {
+    position: absolute;
+    top: 9.1em;
+    left: 14.9em;
+    margin-top: 2.5em;
+    margin-left: 0.5em; 
+    width: 16.8em;
+    text-align: center;
+    display: block;
+}
+
+#destination-input {
+    position: absolute;
+    top: 13.1em;
+    left: 14.9em;
+    margin-top: 0.8em;
+    margin-left: 0.5em; 
+    width: 16.8em;
+    text-align: center;
+    display: block;
+}
+
+#mode-selector {
+    position: absolute;
+    top: 32.2em;
+    left: 12.5em;
+    display: block;
+}
+
+/* output reset */
+
+#output {
+    position: absolute;
+    top: 15em;
+    left: 13em;
+    width: 13em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+    font-size: 1em;
+    z-index: 2;
+    color: #fff;
+    background-color: #3396FF;
+    display: none;
+}
+
+#submit {
+    position: absolute;
+    top: 41.5em;
+    left: 23em;
+    display: block;
+    z-index: 2;
+    font-size: 0.75em;
+    border: none;
+    color: #fff;
+    background-color: #3396FF;
+}
+
+#submit:hover {
+    background-color: #58A9FF;
+}
+
+.guide {
+    position: absolute;
+    margin-left: 10em;
+    margin-top: -1em;
+}
+
+/* nav */
+
+.nav {
+    position: absolute;
+    top: 7.6em;
+    left: 12.52em;
+    height: 1.6em;
+    width: 1.8em;
+    background-color: #737373;
+    z-index: 5;
+}
+
+.burger-menu {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0.5em;
+    line-height: 1.5em;
+}
+
+#open-nav{
+    display: inline-block;
+}
+
+#close-nav{
+    display: none;
+}
+
+.sidenav {
+    position: absolute;
+    top: 9.1em;
+    left: 12.52em;
+    height: 24.15em;
+    width: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.sidenav a {
+    height: 6.1em;
+    line-height: 6.1em;
+    text-align: center;
+    color: #fff;
+    background-color: #737373;
+    list-style: none;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+    background-color: #636363;
+}
+
+/* app */
+
+.app-page {
+    position: absolute;
+    top: 7.6em;
+    left: 14.3em;
+    height: 1.6em;
+    width: 13.24em;
+    color: #fff;
+    background-color: #737373;
+    text-align: center;
+    align-items: center;
+    line-height: 1.6em;
+    z-index: 5;
+}
+
+.app {
+    position: absolute;
+    top: 9.2em;
+    left: 12.52em;
+    height: 23.95em;
+    width: 15em;
+    background-color: #cccccc;
+}
+
+.app h2 {
+    text-align: center;
+}
+
+.app p {
+    text-align: center;
+}
+
+.logo {
+    height: auto;
+    width: 10em;
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.icon {
+    padding-top: 1.5em;
+}
+
+.icon img {
+    margin-left: 1.3em;
+    width: 5.5em;
+}
+
+.icon img:hover {
+    opacity: 0.5;
+}
+
+/* map */
+
+#map {
+    position: absolute;
+    top: 7.62em;
+    left: 12.52em;
+    height: 25.55em;
+    width: 15em;
+    z-index: 1;
+}
