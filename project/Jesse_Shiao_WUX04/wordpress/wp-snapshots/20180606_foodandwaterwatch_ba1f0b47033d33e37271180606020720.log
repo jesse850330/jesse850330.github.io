@@ -1,0 +1,79 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: June 6, 2018 2:08 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.38
+WORDPRESS:	4.9.6
+PHP INFO:	7.2.1 | SAPI: apache2handler
+SERVER:		Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.1 mod_ssl/2.2.34 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (128M default) 
+MEMORY STACK: 18MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Not Supported 
+TABLES: total:14 | filtered:0 | create:14 
+FILTERED: [] 
+SQL CREATED: 20180606_foodandwaterwatch_ba1f0b47033d33e37271180606020720_database.sql 
+SQL FILE SIZE: 421.17KB (431280) 
+SQL FILE TIME: 2018-06-06 02:08:10 
+SQL RUNTIME: 0.18 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /Applications/MAMP/htdocs/wordpress 
+ARCHIVE FILE: 20180606_foodandwaterwatch_ba1f0b47033d33e37271180606020720_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	31.33MB 
+STATS:	Dirs 210 | Files 1,864 
+SQL ADDED: 20180606_foodandwaterwatch_ba1f0b47033d33e37271180606020720_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 2074
+    [filename] => /Applications/MAMP/htdocs/wordpress/wp-snapshots/tmp/20180606_foodandwaterwatch_ba1f0b47033d33e37271180606020720_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 12.78MB 
+ARCHIVE RUNTIME: 5.86 sec. 
+MEMORY STACK: 18MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/Applications/MAMP/htdocs/wordpress/wp-snapshots/tmp/20180606_foodandwaterwatch_ba1f0b47033d33e37271180606020720_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 421.17KB 
+Installer File: 445.92KB 
+Archive File: 12.78MB  
+
+********************************************************************************
+RECORD ID:[3]
+TOTAL PROCESS RUNTIME: 7.08 sec.
+PEAK PHP MEMORY USED: 20MB
+DONE PROCESSING => 20180606_foodandwaterwatch June 6, 2018 2:08 am
+ 
