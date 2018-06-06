@@ -282,9 +282,19 @@ b {
   margin: 0 auto;
   background: #fff;
 }
+
+.logo {
+  height: 75px; 
+  width: auto;
+}
+
 @media screen and (max-width: 1200px) {
   .boxed #fh5co-page {
     max-width: 1000px;
+  }
+  .logo {
+    height: 75px; 
+    width: auto;
   }
 }
 .boxed #fh5co-page .container {
@@ -312,6 +322,10 @@ b {
 @media screen and (max-width: 768px) {
   #fh5co-header #fh5co-main-nav {
     display: none;
+  }
+  .logo {
+    height: 50px; 
+    width: auto;
   }
 }
 #fh5co-header #fh5co-main-nav ul {
