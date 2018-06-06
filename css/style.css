@@ -33,13 +33,13 @@ body {
 }
 
 a {
-  color: #FF5126;
+  color: rgb(253, 63, 15);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #FF5126;
+  color: rgb(255, 143, 115);
   outline: none;
   text-decoration: none;
 }
@@ -52,6 +52,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+b {
+  color: #000;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   margin: 0 0 20px 0;
   padding: 0;
 }
